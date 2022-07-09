@@ -1,0 +1,70 @@
+.home-content-container {
+  display: block;
+  width: 100%;
+  border-bottom: none;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  max-width: 950px;
+  margin: 7rem auto 14rem auto;
+
+}
+
+
+.home-intro {
+  text-align: center;
+  font-size: 2.3rem;
+  line-height: 3rem;
+  max-width: 950px;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin: 0 auto;
+  width:100%;
+}
+
+.old-city {
+  text-decoration: line-through;
+}
+
+.current-city {
+  text-decoration: none;
+}
+
+ul.SocialLinks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.SocialLinks li {
+  display: inline-block;
+}
+
+.SocialLinks li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.SocialLinks li a {
+  opacity: 0.66;
+}
+
+.SocialLinks li img {
+  width: 4rem;
+  height: 4rem;
+  filter: grayscale(100%) brightness(0%);
+  transform: scale3d(1, 1, 1);
+  transition: transform ease-in-out 0.15s;
+}
+
+.SocialLinks li img.SocialLinks-lowContrast {
+  filter: grayscale(100%) brightness(150%) contrast(200%);
+}
+
+.SocialLinks li a:hover {
+  opacity: 1;
+}
+
+.SocialLinks li a:hover img {
+  filter: none;
+  transform: scale3d(1.2, 1.2, 1);
+}
