@@ -1,14 +1,5 @@
-// header {
-//   border-bottom: 3px dotted #f0f0f0;
-// }
-
-.navbar h1 .navbar-logo {
-  color: #3394F6;
-}
-
-.navbar-logo {
-  text-decoration: none;
-  cursor: pointer;
+header {
+  border-bottom: 3px dotted #f0f0f0;
 }
 
 .navbar {
@@ -19,13 +10,23 @@
   margin: 2rem auto;
 }
 
+.navbar h1 .navbar-logo {
+  color: #3394F6;
+  font-weight: bold;
+}
+
+.navbar-logo {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .navbar .nav-list {
   /* width:250px; */
   height: auto;
   justify-content: center;
   align-items: center;
   max-width: 950px;
-
+  margin: 0 auto;
   margin-right: 10px;
 }
 
@@ -54,4 +55,49 @@ nav .nav-list a:hover {
 
 .menu {
   display:none;
+}
+
+
+/* Media queries - Index Section */
+
+@media only screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar .header-logo-container {
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    bottom:1rem;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    display:none;
+  }
+
+  .nav-list .list-item {
+    display: block;
+    border-top: 3px dotted #f0f0f0;
+    padding: 1rem 1rem;
+  }
+
+  header h1 .header-logo {
+    margin:1rem;
+  }
+
+  .active {
+    display: block;
+  }
 }
