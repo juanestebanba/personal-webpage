@@ -1,0 +1,65 @@
+  <div class="bookshelf-content">
+  <div class="bookshelf-header-content">
+    <header class="bookshelf-header">
+      <h1>Books I've read</h1>
+      <p>
+        Tiny summary but detailed notes for each. Use the ISBN number to find
+        it from your local library or anywhere else. This page will constantly
+        update as I read more, so bookmark it if you want to check back in a few months.
+      </p>
+    </header>
+      <p>
+        To get the notes, click on any linked title. I included short snippets
+        and ratings to give you an idea of what you might find interesting.
+        I've roughly categorized it by topic, some of these are broad,
+        some are narrow, it'll change with time.
+      </p>
+      <p>
+        I've also published my notes from 250+ books, articles, and speeches.
+        And if that's not enough, you can also read or listen to some of my
+        features on other sites.
+      </p>
+  </div>
+
+<hr class="individual-books-section">
+
+<%# Codigo dado por github copilot: %>
+  <div class="bookshelf-books-content">
+    <div class="bookshelf-books">
+      <% books.each do |book| %>
+        <div class="bookshelf-book">
+          <div class="bookshelf-book-title">
+            <%= link_to book.title, book %>
+          </div>
+          <div class="bookshelf-book-author">
+            <%= book.author %>
+          </div>
+          <div class="bookshelf-book-rating">
+            <%= book.rating %>
+          </div>
+          <div class="bookshelf-book-snippet">
+            <%= book.snippet %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+  <%# ################################################################################################## %>
+
+
+<%# Codigo viejo de Replit, en la versión de Flask de la página: %>
+  <%# <section class="allbooks">
+    <h2>ALL BOOK NOTES</h2>
+    {% for book,review in bookshelf_variables %}
+      <div class="individual-book">
+        <p>
+          <a href="/bookshelf/{{ book.short_title }}"> {{ book.title }} - by {{ book.author_name }} {{ book.author_surname }} </a>
+        - {{ review.points }}
+        {{ review.summary }}
+        </p>
+      </div>
+    {% endfor %}
+  </section>
+</div> %>
+
+  <%# ################################################################################################## %>
