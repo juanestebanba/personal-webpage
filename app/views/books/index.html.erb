@@ -26,19 +26,19 @@
 <%# Codigo dado por github copilot: %>
   <div class="bookshelf-books-content">
     <div class="bookshelf-books">
-      <% books.each do |book| %>
+      <% @books.each do |book| %>
         <div class="bookshelf-book">
           <div class="bookshelf-book-title">
-            <%= link_to book.title, book %>
+            <%= link_to book.name, book %>
           </div>
           <div class="bookshelf-book-author">
-            <%= book.author %>
+            <%= book.author.name %>
           </div>
           <div class="bookshelf-book-rating">
-            <%= book.rating %>
+            <%= book.rating_number %>
           </div>
           <div class="bookshelf-book-snippet">
-            <%= book.snippet %>
+            <%= book.short_description %>
           </div>
         </div>
       <% end %>
