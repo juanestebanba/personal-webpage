@@ -1,0 +1,48 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.bookshelf-content {
+  display: block;
+  width: 100%;
+  border-bottom: none;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  max-width: 950px;
+  padding: 1rem;
+  margin: 3rem auto auto auto;;
+}
+
+
+.bookshelf-header-content h1 {
+  margin-bottom: 2rem;
+  font-size: 3.3rem;
+}
+
+hr.individual-books-section {
+  margin-top:2rem;
+}
+
+.bookshelf-books-content {
+  margin-top: 3rem;
+}
+
+.bookshelf-books-content h2 {
+  margin-bottom: 2.5rem;
+}
+
+.bookshelf-book {
+    margin-bottom: 2rem;
+}
+
+.bookshelf-book-title {
+  line-height: 2.6rem;
+  margin-bottom: 0.5rem;
+
+}
+
+.bookshelf-book-title a {
+  color: #3394F6;
+  text-decoration: none;
+}
