@@ -1,41 +1,35 @@
-  <div class="bookshelf-content">
+<div class="bookshelf-content">
   <div class="bookshelf-header-content">
-    <header class="bookshelf-header">
-      <h1>Books I've read</h1>
-      <p>
-        Tiny summary but detailed notes for each. Use the ISBN number to find
-        it from your local library or anywhere else. This page will constantly
-        update as I read more, so bookmark it if you want to check back in a few months.
-      </p>
-    </header>
-      <p>
-        To get the notes, click on any linked title. I included short snippets
-        and ratings to give you an idea of what you might find interesting.
-        I've roughly categorized it by topic, some of these are broad,
-        some are narrow, it'll change with time.
-      </p>
-      <p>
-        I've also published my notes from 250+ books, articles, and speeches.
-        And if that's not enough, you can also read or listen to some of my
-        features on other sites.
-      </p>
+    <h1>Books I've read</h1>
+    <p>
+      Tiny summary but detailed notes for each. Use the ISBN number to find
+      it from your local library or anywhere else. This page will constantly
+      update as I read more, so bookmark it if you want to check back in a few months.
+    </p>
+    <p>
+      To get the notes, click on any linked title. I included short snippets
+      and ratings to give you an idea of what you might find interesting.
+      I've roughly categorized it by topic, some of these are broad,
+      some are narrow, it'll change with time.
+    </p>
+    <p>
+      I've also published my notes from 250+ books, articles, and speeches.
+      And if that's not enough, you can also read or listen to some of my
+      features on other sites.
+    </p>
   </div>
 
-<hr class="individual-books-section">
+  <hr class="individual-books-section">
 
 <%# Codigo dado por github copilot: %>
   <div class="bookshelf-books-content">
+    <h2>ALL BOOK NOTES</h2>
     <div class="bookshelf-books">
       <% @books.each do |book| %>
         <div class="bookshelf-book">
           <div class="bookshelf-book-title">
-            <%= link_to book.name, book %>
-          </div>
-          <div class="bookshelf-book-author">
-            <%= book.author.name %>
-          </div>
-          <div class="bookshelf-book-rating">
-            <%= book.rating_number %>
+            <%= link_to "#{book.name} by #{book.author.name}", book%>
+            <%= "(#{book.rating_text})" %>
           </div>
           <div class="bookshelf-book-snippet">
             <%= book.short_description %>
@@ -43,6 +37,8 @@
         </div>
       <% end %>
     </div>
+  </div>
+</div>
 
   <%# ################################################################################################## %>
 
