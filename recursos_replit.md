@@ -9,3 +9,9 @@ https://replit.com/@amasad/my-blog?v=1
 How To Create a Blog Inside Your Rails Application
 
 https://levelup.gitconnected.com/how-to-create-a-blog-inside-your-rails-application-f805dbf0b6fc
+
+The rich text handling is with Actin Text in Rails:
+
+https://kitt.lewagon.com/knowledge/tutorials/blog_with_action_text
+
+https://github.com/lewagon/rails-blog

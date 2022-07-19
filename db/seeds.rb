@@ -28,23 +28,23 @@ book1 = Book.create(
   away to live at the Shire and is swept away to the Lonely Mountain,where he finds a new friend,
   the wizard Gandalf, and a new ring,the One Ring,which makes him a wizard. /n
 
-  The Lord of the Rings is a fantasy novel written by English author and scholar J.R.R. Tolkien.
-  It is one of the primary influences of the modern fantasy genre, and is one of the most popular
-  works of literature in English literature.The story of a young Hobbit named Frodo Baggins, who
-  is swept away to live at the Shire and is swept away to the Lonely Mountain,where he finds a new
-  friend, the wizard Gandalf, and a new ring,the One Ring,which makes him a wizard.
+          The Lord of the Rings is a fantasy novel written by English author and scholar J.R.R. Tolkien.
+          It is one of the primary influences of the modern fantasy genre, and is one of the most popular
+          works of literature in English literature.The story of a young Hobbit named Frodo Baggins, who
+          is swept away to live at the Shire and is swept away to the Lonely Mountain,where he finds a new
+          friend, the wizard Gandalf, and a new ring,the One Ring,which makes him a wizard.
 
-  The Lord of the Rings is a fantasy novel written by English author and scholar J.R.R. Tolkien.
-  It is one of the primary influences of the modern fantasy genre, and is one of the most popular
-  works of literature in English literature.The story of a young Hobbit named Frodo Baggins, who
-  is swept away to live at the Shire and is swept away to the Lonely Mountain,where he finds a new
-  friend, the wizard Gandalf, and a new ring,the One Ring,which makes him a wizard.
+          The Lord of the Rings is a fantasy novel written by English author and scholar J.R.R. Tolkien.
+          It is one of the primary influences of the modern fantasy genre, and is one of the most popular
+          works of literature in English literature.The story of a young Hobbit named Frodo Baggins, who
+          is swept away to live at the Shire and is swept away to the Lonely Mountain,where he finds a new
+          friend, the wizard Gandalf, and a new ring,the One Ring,which makes him a wizard.
 
-  The Lord of the Rings is a fantasy novel written by English author and scholar J.R.R. Tolkien.
-  It is one of the primary influences of the modern fantasy genre, and is one of the most popular
-  works of literature in English literature.The story of a young Hobbit named Frodo Baggins, who
-  is swept away to live at the Shire and is swept away to the Lonely Mountain,where he finds a new
-  friend, the wizard Gandalf, and a new ring,the One Ring,which makes him a wizard.',
+          The Lord of the Rings is a fantasy novel written by English author and scholar J.R.R. Tolkien.
+          It is one of the primary influences of the modern fantasy genre, and is one of the most popular
+          works of literature in English literature.The story of a young Hobbit named Frodo Baggins, who
+          is swept away to live at the Shire and is swept away to the Lonely Mountain,where he finds a new
+          friend, the wizard Gandalf, and a new ring,the One Ring,which makes him a wizard.',
   category: 'Fantasy'
 )
 
