@@ -26,7 +26,8 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 
 
-
+gem 'simple_form'
+gem 'devise'
 gem 'bootstrap', '~> 5.1.3'
 
 
