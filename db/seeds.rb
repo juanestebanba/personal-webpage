@@ -45,7 +45,8 @@ book1 = Book.create(
           works of literature in English literature.The story of a young Hobbit named Frodo Baggins, who
           is swept away to live at the Shire and is swept away to the Lonely Mountain,where he finds a new
           friend, the wizard Gandalf, and a new ring,the One Ring,which makes him a wizard.',
-  category: 'Fantasy'
+  category: 'Fantasy',
+  user_id: 1
 )
 
 book2 = Book.create(
@@ -81,7 +82,8 @@ book2 = Book.create(
           works of literature in English literature.The story of a young Hobbit named Frodo Baggins, who
           is swept away to live at the Shire and is swept away to the Lonely Mountain,where he finds a new
           friend, the wizard Gandalf, and a new ring,the One Ring,which makes him a wizard.',
-  category: 'Fantasy'
+  category: 'Fantasy',
+  user_id: 1
 )
 
 # book3 = Book.create(
