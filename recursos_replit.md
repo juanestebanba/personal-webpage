@@ -15,3 +15,5 @@ The rich text handling is with Actin Text in Rails:
 https://kitt.lewagon.com/knowledge/tutorials/blog_with_action_text
 
 https://github.com/lewagon/rails-blog
+
+https://www.youtube.com/watch?v=MCEzxY9BbiU
