@@ -14,8 +14,6 @@ require("@rails/actiontext")
 // import "@rails/actiontext"
 
 
-import "bootstrap"
-
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
