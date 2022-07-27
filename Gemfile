@@ -28,7 +28,6 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'simple_form'
 gem 'devise'
-gem 'bootstrap', '~> 5.1.3'
 
 
 # Reduces boot times through caching; required in config/boot.rb

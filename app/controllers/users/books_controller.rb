@@ -51,7 +51,7 @@ module Users
     end
 
     def book_params
-      params.require(:book).permit(:name, :rating_text, :rating_number, :short_description, :notes, :category, :author_id, :user_id)
+      params.require(:book).permit(:name, :rating_text, :rating_number, :short_description, :rich_notes, :category, :author_id, :user_id)
       # :author, :short_description,:category
     end
   end
