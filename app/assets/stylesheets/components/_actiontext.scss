@@ -35,7 +35,6 @@
   }
 }
 
-
 .trix-content {
   line-height: 1.5; }
   .trix-content * {
@@ -111,3 +110,8 @@
     .trix-content .attachment-gallery.attachment-gallery--2 .attachment, .trix-content .attachment-gallery.attachment-gallery--4 .attachment {
       flex-basis: 50%;
       max-width: 50%; }
+
+
+    trix-editor {
+        height: 2400px;
+      }
