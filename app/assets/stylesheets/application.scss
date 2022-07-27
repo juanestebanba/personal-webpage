@@ -14,7 +14,15 @@
  *= require_self
  */
 
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
 
+body {
+  font-family: "Inter", "Helvetica", "sans-serif";
+}
 
 html {
   font-size: 62.5%;
@@ -26,12 +34,11 @@ html {
 
 
 // Graphical variables:
-@import "config/fonts";
+// @import "config/fonts";
 // @import "config/colors";
 
 
 
  // Your CSS partials:
 @import "components/index";
-@import "pages/home";
-@import "pages/books";
+@import "pages/index";
