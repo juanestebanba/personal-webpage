@@ -1,0 +1,101 @@
+/* Media queries - Index Section */
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar .header-logo-container {
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    bottom:1rem;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    display:none;
+  }
+
+  .nav-list .list-item {
+    display: block;
+    border-top: 3px dotted #f0f0f0;
+    padding: 1rem 1rem;
+  }
+
+  header h1 .header-logo {
+    margin:1rem;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .index-content {
+  padding: 1rem;
+  }
+
+  .home-intro {
+  font-size: 2rem;
+  }
+
+  footer p {
+  font-size: 1.3rem;
+  }
+
+
+/* Media queries - About Section */
+
+  .ResponsiveSection {
+    display:block;
+    margin-top: 0rem;
+  }
+
+  .ResponsiveSection-header {
+    margin: 0 0 1rem;
+  }
+
+   .ResponsiveSection-withDivider .ResponsiveSection-header {
+    border: none;
+  }
+}
+
+
+/* Media queries - Podcast Section */
+
+@media only screen and (max-width: 700px) {
+  .podcast-header {
+    display: block;
+  }
+
+  .podcast-image-container {
+  padding-right: 0;
+  display:block;
+  text-align: center;
+  }
+
+  .episode-wrapper {
+  display:block;
+  }
+
+  h3.episode-title {
+  text-align: center;
+  margin-top: 1.5rem;
+  }
+
+  .episode-buttons {
+  margin:auto;
+  }
+
+
+}
