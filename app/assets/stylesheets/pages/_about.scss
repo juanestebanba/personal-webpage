@@ -1,0 +1,63 @@
+.about-content {
+  display: block;
+  width: 100%;
+  border-bottom: none;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  max-width: 950px;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 0 auto;
+}
+
+.ResponsiveSection {
+    page-break-inside: avoid;
+    margin: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.ResponsiveSection-header {
+    -ms-flex: 0 0 16rem;
+    flex: 0 0 16rem;
+    margin: 0 3rem 0 0;
+    padding: 3rem 1rem 0 0;
+
+}
+
+.ResponsiveSection-withDivider .ResponsiveSection-header {
+    border-right: 1px solid #bfc6c9;
+}
+
+.Content-styled h1 {
+    font-size: 3rem;
+}
+
+.Content-styled h2 {
+    font-size: 3rem;
+}
+
+.Content-styled h3 {
+    font-size: 2rem;
+}
+
+.Content-styled p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.Content-styled ul {
+    padding-left: 1.5em;
+    list-style-position: outside;
+    margin-top: 0;
+}
+
+.ResumeItem .ResumeItem-company, .ResumeItem ol:last-child, .ResumeItem p:last-child, .ResumeItem ul:last-child {
+    margin-bottom: 0;
+}
+
+.Text-metadata, .Text-metadata a:link {
+  font-family: Open Sans Condensed,sans-serif;
+  color: #6f838f;
+  font-weight: 300;
+}
