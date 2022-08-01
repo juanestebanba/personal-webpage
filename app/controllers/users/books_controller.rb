@@ -1,9 +1,12 @@
 module Users
   class BooksController < UsersController
     before_action :set_book, only: [:show, :edit, :update, :destroy]
+    skip_before_action :authenticate_user!, only: [:index, :show]
+
 
     def index
-      @books = current_user.books
+      @books = Book.all
+      # @books = current_user.books
     end
 
     def show
@@ -47,7 +50,8 @@ module Users
     private
 
     def set_book
-      @book = current_user.books.find(params[:id])
+      @book = Book.find(params[:id])
+      # @book = current_user.books.find(params[:id])
     end
 
     def book_params
