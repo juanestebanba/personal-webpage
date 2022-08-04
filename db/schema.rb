@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_01_214308) do
+ActiveRecord::Schema.define(version: 2022_08_04_223026) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -84,6 +84,15 @@ ActiveRecord::Schema.define(version: 2022_08_01_214308) do
     t.index ["book_id"], name: "index_elements_on_book_id"
   end
 
+  create_table "postelements", force: :cascade do |t|
+    t.string "element_type"
+    t.bigint "post_id", null: false
+    t.integer "position"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["post_id"], name: "index_postelements_on_post_id"
+  end
+
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -112,5 +121,6 @@ ActiveRecord::Schema.define(version: 2022_08_01_214308) do
   add_foreign_key "books", "authors"
   add_foreign_key "books", "users"
   add_foreign_key "elements", "books"
+  add_foreign_key "postelements", "posts"
   add_foreign_key "posts", "users"
 end

@@ -8,21 +8,21 @@
       </div>
     </div>
   </div>
-  <div class="col-md-9">
+  <%# <div class="col-md-9">
     <div class="mb-3">
       <%= form_with(model: [@book, @paragraph]) do |form|%>
-        <%= form.hidden_field :element_type, value: 'paragraph' %>
-        <%= form.submit 'Paragraph', class: 'btn btn-primary' %>
-      <% end %>
-    </div>
-
-    <% @book.elements.each do |element| %>
-      <%# <% if element.persisted? %>
-        <%= form_with(model: [@book, element]) do |form| %>
-          <%= form.text_area :notes %>
-          <%= form.submit "Save", class: 'btn btn-primary' %>
-        <% end %>
+        <%# <%= form.hidden_field :element_type, value: 'paragraph' %>
+        <%# <%= form.submit 'Paragraph', class: 'btn btn-primary' %>
       <%# <% end %>
-    <% end %>
-  </div>
-</div>
+    <%# </div> %>
+
+    <%# <% @book.elements.each do |element| %>
+     <%# <% if element.persisted? %>
+        <%# <%= form_with(model: [@book, element]) do |form| %>
+          <%# <%= form.text_area :notes %>
+          <%# <%= form.submit "Save", class: 'btn btn-primary' %>
+        <%# <% end %>
+      <%# <% end %>
+    <%# <% end %>
+  <%# </div> %>
+<%# </div> %>

@@ -1,12 +1,9 @@
 module Users
   class PostsController < ApplicationController
-    before_action :set_post, only: %i[ show edit update destroy ]
+    before_action :set_post, only: %i[edit update destroy]
 
     def index
       @posts = current_user.posts
-    end
-
-    def show
     end
 
     def new
@@ -14,6 +11,7 @@ module Users
     end
 
     def edit
+      @paragraph = @post.postelements.build(element_type: 'paragraph')
     end
 
     def create
