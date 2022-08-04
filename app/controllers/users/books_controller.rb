@@ -29,7 +29,8 @@ module Users
 
     def edit
       @book = Book.find(params[:id])
-      @paragraph = @book.elements.build(element_type: 'paragraph')
+      # @book = Book.find(params[:id])
+      # @paragraph = @book.elements.build(element_type: 'paragraph')
     end
 
     def update
