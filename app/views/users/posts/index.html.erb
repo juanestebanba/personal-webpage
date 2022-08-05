@@ -1,20 +1,18 @@
-<div class="posts-cointainer">
-  <h4 class="posts-title">
-    <span>Posts</span>
-    <%= link_to 'New Post', new_post_path, class: 'posts-btn' %>
-  </h4>
 
-
-  <% @posts.each do |post| %>
-    <%= link_to edit_post_path(post), class: "post-card-link" do %>
-      <div class="post-card">
-        <div class="post-card-body">
-          <h5 class="post-card-title"><%= post.title %></h5>
-          <p class="post-card-description"><%= post.description %></p>
-        </div>
-      </div>
-    <% end %>
-  <% end %>
-
-  <%= link_to 'New Post', new_post_path %>
+ <div class="posts-cointainer">
+  <div class="bookshelf-books-content">
+    <h2 class ="posts-title">POSTS</h2>
+    <div class="posts-containerbooks">
+      <% @posts.each do |post| %>
+        <%= link_to post, class: "post-card-link" do %>
+          <div class="post-card">
+            <div class="post-card-body">
+              <h5 class="post-card-title"><%= post.title %></h5>
+              <p class="post-card-description"><%= post.description %></p>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
 </div>

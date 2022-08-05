@@ -11,19 +11,19 @@
         </div>
       </div>
     </div>
-    <div class="col-2">
+    <%# <div class="col-2">
       <%= form_with(model:[@post, @paragraph]) do |form| %>
-        <%= form.hidden_field :element_type, value: 'paragraph' %>
-        <%= form.submit 'Paragraph' %>
-      <% end %>
-    <% @post.postelements.each do |postelement| %>
-      <% if postelement.persisted? %>
-        <%= form_with(model:[@post, postelement]) do |form| %>
-          <%= form.rich_text_area :content %>
-          <%= form.submit 'Save' %>
-        <% end %>
-      <% end %>
-    <% end %>
-    </div>
-  </div>
+        <%# <%= form.hidden_field :element_type, value: 'paragraph' %>
+        <%# <%= form.submit 'Paragraph' %>
+      <%# <% end %>
+    <%# <% @post.postelements.each do |postelement| %>
+      <%# <% if postelement.persisted? %>
+        <%# <%= form_with(model:[@post, postelement]) do |form| %>
+          <%# <%= form.rich_text_area :content %>
+          <%# <%= form.submit 'Save' %>
+        <%# <% end %>
+      <%# <% end %>
+    <%# <% end %>
+    <%# </div>
+  </div> %>
 </div>
