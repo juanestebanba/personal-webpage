@@ -3,7 +3,6 @@ module Users
     before_action :set_book, only: [:show, :edit, :update, :destroy]
     skip_before_action :authenticate_user!, only: [:index, :show]
 
-
     def index
       @books = Book.all
       # @books = current_user.books
@@ -36,7 +35,7 @@ module Users
     def update
       @book = Book.find(params[:id])
       if @book.update(book_params)
-        redirect_to @book
+        redirect_to @book, notice: 'Book was successfully updated.'
       else
         render 'edit'
       end

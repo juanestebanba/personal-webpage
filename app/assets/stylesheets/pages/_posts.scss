@@ -7,16 +7,9 @@
   // display: block;
   // width: 100%;
   // border-bottom: none;
-  font-size: 1.5rem;
   // line-height: 2.1rem;
   padding: 1rem;
   margin: 0 auto;
-}
-
-.posts-title {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 4px;
 }
 
 .post-card-link {
@@ -37,4 +30,11 @@
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 4px;
+  color: #3394F6;
+  font-size: 1.8rem;
+}
+
+.post-card-description {
+  font-size: 1.6rem;
+  color: #000000;
 }

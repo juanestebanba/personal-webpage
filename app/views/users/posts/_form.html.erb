@@ -21,6 +21,11 @@
     <%= form.text_area :description, class: 'posts-form-control' %>
   </div>
 
+  <div class="posts-form-group">
+    <%= form.label :content %>
+    <%= form.rich_text_area :rich_content, class: 'posts-form-control' %>
+  </div>
+
   <div class="actions">
     <%= form.submit class: 'btn-blog-form' %>
   </div>
