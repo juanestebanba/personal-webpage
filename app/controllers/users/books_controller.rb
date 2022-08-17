@@ -10,6 +10,7 @@ module Users
 
     def show
       @book = Book.find(params[:id])
+      # @book = Book.find_by(name: params[:name])
     end
 
     def new
@@ -51,6 +52,7 @@ module Users
 
     def set_book
       @book = Book.find(params[:id])
+      # @book = Book.find_by(name: params[:name])
       # @book = current_user.books.find(params[:id])
     end
 
@@ -59,34 +61,4 @@ module Users
       # :author, :short_description,:category
     end
   end
-
-  # def require_same_user
-  #   if current_user != @book.user
-  #     flash[:danger] = "You can only edit or delete your own books."
-  #     redirect_to books_path
-  #   end
-  # end
-
-  # def require_admin
-  #   if logged_in? and !current_user.admin?
-  #     flash[:danger] = "Only admins can perform that action."
-  #     redirect_to books_path
-  #   end
-  # end
-
-  # def require_login
-  #   if !logged_in?
-  #     flash[:danger] = "You must be logged in to perform that action."
-  #     redirect_to books_path
-  #   end
-  # end
-
-  # def require_login_or_admin
-  #   if !logged_in? and !current_user.admin?
-  #     flash[:danger] = "You must be logged in or an admin to perform that action."
-  #     redirect_to books_path
-  #   end
-  # end
-
-
 end

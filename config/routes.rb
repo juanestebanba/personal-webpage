@@ -7,12 +7,9 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   scope module: 'users' do
-    resources :books do
-      resources :elements
-    end
-    resources :posts do
-      resources :postelements
-    end
+    resources :books
+    resources :posts
+    resources :authors
   end
 
   get 'about', to: 'pages#about'

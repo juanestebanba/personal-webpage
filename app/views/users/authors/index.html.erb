@@ -1,0 +1,10 @@
+<div class="authors-container">
+    <h2 class="authors-title">ALL AUTHORS</h2>
+    <div class="authors-lists">
+      <% @authors.each do |author| %>
+        <div class="author">
+            <%= "#{author.id} - #{author.name}"%>
+        </div>
+      <% end %>
+    </div>
+</div>
