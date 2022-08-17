@@ -1,0 +1,124 @@
+
+
+
+.authors-container {
+  max-width: 950px;
+  // display: block;
+  // width: 100%;
+  // border-bottom: none;
+  // line-height: 2.1rem;
+  padding: 3rem;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+.authors-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+// <div class="authors-container">
+// <h2 class="authors-title">ALL AUTHORS</h2>
+// <div class="authors-lists">
+//   <% @authors.each do |author| %>
+//     <div class="author">
+//         <%= "#{author.id} - #{author.name}"%>
+//     </div>
+//   <% end %>
+// </div>
+// </div>
+
+
+
+
+
+
+
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+// .post-card-link {
+//   text-decoration: none;
+// }
+
+// .post-card {
+//   border: solid black;
+//   padding: 12px 16px;
+//   border-radius: 4px;
+//   // display: flex;
+//   // flex-direction: column;
+//   // justify-content: space-between;
+//   margin-bottom: 1.5rem;
+// }
+
+// .post-card-title {
+//   font-size: 1.2rem;
+//   font-weight: bold;
+//   margin-bottom: 4px;
+//   color: #3394F6;
+//   font-size: 1.8rem;
+// }
+
+// .post-card-description {
+//   font-size: 1.6rem;
+//   color: #000000;
+// }
+
+
+
+
+
+// // Place all the styles related to the books controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: https://sass-lang.com/
+
+// .bookshelf-content {
+//   display: block;
+//   width: 100%;
+//   border-bottom: none;
+//   margin-bottom: 1rem;
+//   font-size: 1.6rem;
+//   line-height: 2.6rem;
+//   max-width: 950px;
+//   padding: 1rem;
+//   margin: 3rem auto auto auto;;
+// }
+
+// .bookshelf-header-content h1 {
+//   margin-bottom: 2rem;
+//   font-size: 3.3rem;
+// }
+
+// hr.individual-books-section {
+//   margin-top:2rem;
+// }
+
+// .bookshelf-books-content {
+//   margin-top: 3rem;
+// }
+
+// .bookshelf-books-content h2 {
+//   margin-bottom: 2.5rem;
+// }
+
+// .bookshelf-book {
+//     margin-bottom: 2rem;
+// }
+
+// .bookshelf-book-title {
+//   line-height: 2.6rem;
+//   margin-bottom: 0.5rem;
+
+// }
+
+// .bookshelf-book-title a {
+//   color: #3394F6;
+//   text-decoration: none;
+// }
