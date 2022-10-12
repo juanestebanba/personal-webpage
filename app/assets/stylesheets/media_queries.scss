@@ -96,6 +96,14 @@
   .episode-buttons {
   margin:auto;
   }
+}
 
 
+
+/* Media queries - Books section */
+
+@media only screen and (max-width: 1000px) {
+.individual-book-content {
+    padding: 2rem;
+}
 }
